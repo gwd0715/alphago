@@ -13,7 +13,7 @@ class Utils {
             nightlife_score: rawPoiInfo.nightlife_score ? rawPoiInfo.nightlife_score : 0,
             score: rawPoiInfo.score ? rawPoiInfo.score : 0,
             inPlan: false,
-            img: rawPoiInfo.images
+            images: rawPoiInfo.images
                 .map((img) => (img.sizes.medium ? img.sizes.medium.url : ''))
                 .filter((url) => url !== '')
         }));

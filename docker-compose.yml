@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+    node:
+        restart: always
+        build: ./backend
+
+    nginx:
+        restart: always
+        build: ./frontend
+        ports:
+            - '8080:80/tcp'
+        depends_on:
+            - node

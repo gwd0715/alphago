@@ -67,11 +67,11 @@ const getPoiType = (req, res, next) => {
             break;
     }
 };
-app.get('/api/city', getCityId, async (req, res) => {
-    const { cityId } = res.locals;
-    const cityInfo = client_1.triposo.getCityInfoFromFile(cityId);
-    res.json(cityInfo);
-});
+// app.get('/api/city', getCityId, async (req, res) => {
+//     const { cityId } = res.locals;
+//     const cityInfo = triposo.getCityInfoFromFile(cityId);
+//     res.json(cityInfo);
+// });
 app.get('/api/dayPlan', getCityId, getDays, async (req, res) => {
     const { cityId, days } = res.locals;
     const dataFromDB = await get_1.default.getDayPlanFromDB(cityId, days);

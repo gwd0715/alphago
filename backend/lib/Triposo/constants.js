@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const APIinterface_1 = require("./APIinterface");
 exports.defaultHeaders = {
-    'X-Triposo-Account': '43ADL8X1',
-    'X-Triposo-Token': 'umzp4xvjvjpqbzbnifn6iwv4nhhg6zww'
+    'X-Triposo-Account': '8W1M9QVS',
+    'X-Triposo-Token': 'lx9yvxxa8y2yrtv66bawcwgajp03ouu9'
 };
 exports.URL = {
     baseURL: 'https://www.triposo.com/api/20200405/',
